@@ -29,4 +29,4 @@ You can also exploit this manually by adding the
 
 `User-Agentt: zerodiumsystem('ls');`
 
-header in Burp Suite and sending a new HTTP request to the host.
+header in Burp Suite and sending a new HTTP request to the host. Start a netcat listener before you send out the request.
