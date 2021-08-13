@@ -5,7 +5,7 @@
 An early release of PHP, the PHP 8.1.0-dev version was released with a backdoor on March 28th 2021, but the backdoor was quickly discovered and removed. If this version of PHP runs on a server, an attacker can execute arbitrary code by sending the User-Agentt header.
 The following bash exploit uses the backdoor to provide a shell on the host. A simple proof of concept file.
 
-## 2.0 Usage with the bash script
+## 2.0 Usage - with a bash script
 
  Run the script with the host IP, your own IP + port (for the reverse shell) and enjoy your shell:
 
