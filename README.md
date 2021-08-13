@@ -7,7 +7,7 @@ The following bash exploit uses the backdoor to provide a shell on the host. A s
 
 ## 2.0 Usage - with a bash script
 
- Run the script with the host IP, your own IP + port (for the reverse shell) and enjoy your shell:
+ Run the script, enter the host IP, your own IP + port (for the reverse shell) when being asked for and enjoy your shell:
 
 `$ git clone https://github.com/PenTestical/PHP-8.1.0-dev_RCE && cd PHP-8.1.0-dev_RCE/`
 
